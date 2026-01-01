@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/Home'
-import DashboardLayout from './pages/dashboard/layout';
+import DashboardLayout from './pages/dashboard/layout.tsx';
 import Dashboard from './pages/dashboard/Dashboard'
 
 const router= createBrowserRouter([
