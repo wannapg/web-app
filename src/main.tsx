@@ -11,14 +11,15 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/Home'
-import Dashboard from './pages/Dashboard.tsx'
+import DashboardLayout from './pages/dashboard/layout';
+import Dashboard from './pages/dashboard/Dashboard'
 
 const router= createBrowserRouter([
   {path:'/',
-    element: <Dashboard /> , 
+    element: <DashboardLayout>{<Dashboard />}</DashboardLayout>,
   },{
     path: '/dashboard', 
-    element: <Dashboard /> 
+    element: <DashboardLayout>{<Dashboard />}</DashboardLayout>,
   },
 ])
 
